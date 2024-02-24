@@ -1,0 +1,9 @@
+Library --->   1. bcryptjs --> Used for encryption of text anlso to create Tokens as well
+               2. jsonwetoken --->  generate the tokens from server side and to store it in cokkies so that it cannot be Manipulated
+               3. nodemailer --> use to trigger the mail from any platform
+               4. react-hot-toast --->  Helps to give small popup messages (Try by your self)
+               5. mongoose ---> helps us to talk with Mongoose DB(it is a wrapper around mongo DB driver)
+
+--> THis NextJS is a edge run framework so for every aPI call it will create a new connection with DB .It doesnot stay connected with DB
+--> api folder in app is our Backend part of our project --> it taken our data from frontend and give itto our Backend
+---> " const User=mongoose.models.users || mongoose.model("users",userSchema); "   ===> In user models it is useed to first check if a users model exist if exist then use it else make a nes model with name users with Schema name userSchema
